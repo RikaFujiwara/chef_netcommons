@@ -1,2 +1,12 @@
-chef_netcommons
-===============
+Description
+===========
+
+Requirements
+============
+
+Attributes
+==========
+
+Usage
+=====
+
