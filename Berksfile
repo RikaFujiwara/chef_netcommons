@@ -10,3 +10,5 @@ cookbook 'jenkins', git: 'https://github.com/opscode-cookbooks/jenkins.git'
 # Workaround for mysql cookbook and obsolete gem package dependencies
 # https://github.com/atomic-penguin/cookbook-gitlab/issues/74
 cookbook 'gitlab', git: 'https://github.com/topaz2/cookbook-gitlab.git', branch: 'upgrade_dependencies'
+
+cookbook 'composer', git: "https://github.com/Morphodo/chef-composer.git"
