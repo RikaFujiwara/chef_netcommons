@@ -11,6 +11,3 @@ suites:
   - name: netcommons
     run_list:
       - recipe[netcommons]
-    attributes:
-      boilerplate:
-        country: 'jp'
