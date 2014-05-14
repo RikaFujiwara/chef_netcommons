@@ -5,7 +5,7 @@
 
 include_recipe 'boilerplate_php'
 
-%w( postgresql-server-dev-all ).each do |pkg|
+%w( postgresql-server-dev-all php5-pgsql ).each do |pkg|
   package pkg do
     action [:install]
   end
