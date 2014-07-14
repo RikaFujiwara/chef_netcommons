@@ -7,7 +7,7 @@ group :lint do
 end
 
 group :unit do
-  gem 'berkshelf'
+  gem 'berkshelf', '>= 3.1' # vagrant-berkshelf depends on 3.1+
   gem 'chefspec'
   gem 'knife-spec'
 end
