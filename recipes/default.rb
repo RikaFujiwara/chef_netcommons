@@ -39,6 +39,12 @@ template "/etc/samba/smb.conf" do
   source 'samba/smb.conf'
 end
 
-service 'smbd' do
+samba = case node[:platform_family]
+        when 'debian'
+          'samba'
+        when 'ubuntu'
+          'smbd'
+        end
+service samba do
   action :restart
 end
