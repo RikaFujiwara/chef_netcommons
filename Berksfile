@@ -9,6 +9,8 @@ group :development do
   cookbook 'boilerplate_php', git: 'https://github.com/topaz2/chef_boilerplate_php.git'
 end
 
+cookbook 'nodejs', git: 'https://github.com/topaz2/nodejs-cookbook.git'
+
 # Workaround #2.0.2 fails to install jenkins using package.
 # Needs this fix to be packaged.
 # @see https://github.com/opscode-cookbooks/jenkins/commit/3e29e2f9e0d693b5ffa8d8a23f68440119a3c44c
