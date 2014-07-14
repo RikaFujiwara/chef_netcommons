@@ -39,7 +39,7 @@ template "/etc/samba/smb.conf" do
   source 'samba/smb.conf'
 end
 
-samba = case node[:platform_family]
+samba = case node[:platform]
         when 'debian'
           'samba'
         when 'ubuntu'
