@@ -9,7 +9,7 @@ group :development do
   cookbook 'boilerplate_php', git: 'https://github.com/topaz2/chef_boilerplate_php.git'
 end
 
-cookbook 'nodejs', git: 'https://github.com/topaz2/nodejs-cookbook.git'
+cookbook 'nodejs', git: 'https://github.com/topaz2/nodejs-cookbook.git', branch: 'wheezy_support'
 
 # Workaround #2.0.2 fails to install jenkins using package.
 # Needs this fix to be packaged.
