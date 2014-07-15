@@ -3,6 +3,9 @@
 # Recipe:: default
 #
 
+execute 'apt-get update' do
+  command 'apt-get update'
+end
 package 'postgresql-server-dev-all'
 include_recipe 'boilerplate_php'
 
