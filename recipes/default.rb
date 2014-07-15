@@ -3,10 +3,11 @@
 # Recipe:: default
 #
 
+package 'postgresql-server-dev-all'
 include_recipe 'boilerplate_php'
 
 %w(
-  postgresql-server-dev-all php5-pgsql samba
+  php5-pgsql samba
 ).each do |pkg|
   package pkg do
     action [:install]
