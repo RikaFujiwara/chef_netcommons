@@ -19,6 +19,9 @@ suites:
     run_list:
       - recipe[netcommons]
     attributes:
+      jenkins:
+        executor:
+          timeout: 240
       boilerplate:
         country: 'jp'
         git:
