@@ -21,7 +21,7 @@ suites:
     attributes:
       jenkins:
         executor:
-          timeout: 240
+          timeout: 600
       boilerplate:
         country: 'jp'
         git:
