@@ -9,7 +9,6 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
-  - name: ubuntu-14.04
   - name: debian-wheezy-7
     driver_config:
       box: debian-wheezy-7
