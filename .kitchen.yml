@@ -17,6 +17,7 @@ platforms:
 suites:
   - name: netcommons
     run_list:
+      - recipe[chef-dk]
       - recipe[netcommons]
     attributes:
       jenkins:
@@ -27,3 +28,11 @@ suites:
         git:
           use_git_protocol: false
         gitlab: false
+        app:
+          repo:
+            type: 'git'
+            uri: 'https://github.com/NetCommons3/NetCommons3.git'
+        docs:
+          repo:
+            type: 'git'
+            uri: 'https://github.com/NetCommons3/NetCommons3Docs.git'
