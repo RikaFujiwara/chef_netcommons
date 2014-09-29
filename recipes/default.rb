@@ -6,7 +6,6 @@
 execute 'apt-get update' do
   command 'apt-get update'
 end
-package 'postgresql-server-dev-all'
 include_recipe 'boilerplate_php'
 
 %w(
@@ -28,14 +27,6 @@ include_recipe 'apache2'
 
 apache_module 'rewrite' do
   enable true
-end
-
-## Setup postgresql
-include_recipe 'postgresql::server'
-
-template "#{node[:postgresql][:dir]}/pg_hba.conf" do
-  source 'postgresql/pg_hba.conf'
-  notifies :restart, 'service[postgresql]'
 end
 
 ## Setup samba
