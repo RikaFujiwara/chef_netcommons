@@ -3,23 +3,14 @@
 # Recipe:: default
 #
 
-execute 'apt-get update' do
-  command 'apt-get update'
-end
 include_recipe 'boilerplate_php'
 
 %w(
-  php5-pgsql samba
+  samba
 ).each do |pkg|
   package pkg do
     action [:install]
   end
-end
-
-# Install gem packages
-execute 'install netcommons related gem packages' do
-  command "cd #{node[:boilerplate][:app_root]}; gemrat pg --no-version"
-  only_if { ::File.exists?("#{node[:boilerplate][:app_root]}/Gemfile")}
 end
 
 ## Setup apache
