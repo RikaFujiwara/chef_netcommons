@@ -23,11 +23,11 @@ suites:
       apache:
         version: '2.4'
       mysql:
-        role:                   'master'
-        server_id:               1
-        bind_address:           '0.0.0.0'
-        server_root_password:   'root'
-        server_repl_password:   'repl'
+        role: 'master'
+        server_id: 1
+        bind_address: '0.0.0.0'
+        server_root_password: 'root'
+        server_repl_password: 'repl'
         server_debian_password: ''
       jenkins:
         executor:
