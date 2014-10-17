@@ -17,6 +17,7 @@ suites:
       - recipe[chef-dk]
       - recipe[boilerplate_php::php55]
       - recipe[boilerplate]
+      - recipe[mroonga]
       - recipe[boilerplate_php]
       - recipe[netcommons]
     attributes:
