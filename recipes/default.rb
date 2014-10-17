@@ -3,8 +3,6 @@
 # Recipe:: default
 #
 
-include_recipe 'boilerplate_php'
-
 %w(
   samba
 ).each do |pkg|
