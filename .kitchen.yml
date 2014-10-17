@@ -15,6 +15,9 @@ suites:
   - name: netcommons
     run_list:
       - recipe[chef-dk]
+      - recipe[boilerplate_php::php55]
+      - recipe[boilerplate]
+      - recipe[boilerplate_php]
       - recipe[netcommons]
     attributes:
       apache:
