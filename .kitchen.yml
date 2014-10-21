@@ -23,13 +23,13 @@ suites:
   - name: netcommons
     run_list:
       - recipe[chef-dk]
+      - recipe[database::mysql]
+      - recipe[mysql::server]
       - recipe[boilerplate_php::php55]
       - recipe[nodejs::nodejs_from_package]
       - recipe[phantomjs]
       - recipe[python]
       - recipe[apache2]
-      - recipe[database::mysql]
-      - recipe[mysql::server]
       - recipe[jenkins::master]
       - recipe[boilerplate]
       - recipe[mroonga]
