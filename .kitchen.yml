@@ -1,5 +1,5 @@
 driver:
-  name: vagrant
+  name: docker
   customize:
     cpus: 4
     memory: 1024
@@ -13,6 +13,7 @@ platforms:
       - recipe[apt]
       - recipe[apt-repo]
       - recipe[boilerplate::apt_fast]
+      - recipe[php::apt_ondrej_ppa]
   - name: debian-7.4
     run_list:
       - recipe[apt]
@@ -23,13 +24,12 @@ suites:
   - name: netcommons
     run_list:
       - recipe[chef-dk]
-      - recipe[database::mysql]
-      - recipe[mysql::server]
-      - recipe[boilerplate_php::php55]
       - recipe[nodejs::nodejs_from_package]
       - recipe[phantomjs]
       - recipe[python]
       - recipe[apache2]
+      - recipe[database::mysql]
+      - recipe[mysql::server]
       - recipe[jenkins::master]
       - recipe[boilerplate]
       - recipe[mroonga]
