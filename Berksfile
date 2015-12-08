@@ -7,7 +7,7 @@ cookbook 'boilerplate', git: 'https://github.com/NetCommons3/chef_boilerplate.gi
 cookbook 'boilerplate_php', git: 'https://github.com/NetCommons3/chef_boilerplate_php.git'
 cookbook 'chef-dk'
 cookbook 'composer', git: 'https://github.com/Morphodo/chef-composer.git'
-# cookbook 'mroonga'
+cookbook 'mroonga'
 cookbook 'php', git: 'https://github.com/trinitronx/php.git', branch: 'COOK-4439-add-php-5.5.9-support-on-ubuntu-12.04'
 cookbook 'virtualbox'
 
