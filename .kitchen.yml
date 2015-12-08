@@ -30,6 +30,7 @@ suites:
       - recipe[mysql::server]
       - recipe[jenkins::master]
       - recipe[boilerplate]
+      - recipe[mroonga]
       - recipe[boilerplate_php]
       - recipe[netcommons]
     attributes:
