@@ -2,7 +2,7 @@ source 'https://api.berkshelf.com'
 
 metadata
 
-cookbook 'apt', git: 'https://github.com/topaz2/apt', branch: 'firewall_workaround'
+#cookbook 'apt', git: 'https://github.com/topaz2/apt', branch: 'firewall_workaround'
 cookbook 'boilerplate', git: 'https://github.com/NetCommons3/chef_boilerplate.git'
 cookbook 'boilerplate_php', git: 'https://github.com/NetCommons3/chef_boilerplate_php.git'
 cookbook 'chef-dk'
